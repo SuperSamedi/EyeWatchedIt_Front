@@ -1,0 +1,15 @@
+hr {
+  border: none;
+  height: 1px;
+  background-color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-content: center;
+  gap: .5rem;
+}

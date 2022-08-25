@@ -1,0 +1,21 @@
+<nav>
+  <ul>
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      <a routerLink="/">Home</a>
+    </li>
+    <li routerLinkActive="active">
+      <a routerLink="/film/all">All Films</a>
+    </li>
+    <li routerLinkActive="active">
+      <a routerLink="/sign-in">Sign in</a>
+    </li>
+    <li routerLinkActive="active">
+      <a routerLink="/sign-up">Sign up</a>
+    </li>
+    <li>
+      <a routerLink="/" (click)="logout()">Log out</a>
+    </li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,18 @@
+<h1>Films I watched</h1>
+
+<h4><strong>{{ films?.length || '0' }}</strong> films!</h4>
+<ul>
+  <li *ngFor="let film of films">
+    <input class="btn-delete" type="button" value="delete" (click)="delete(film.id)">
+    <h5>{{film.title}}</h5>
+  </li>
+</ul>
+<!--
+<form (sbmit)="onSubmit()">
+  <fieldset>
+    <legend>New Film</legend>
+    <input type="text" name="title" placeholder="Title" [(ngModel)]="title"> <br>
+  </fieldset>
+  <button type="submit">Submit</button>
+</form> -->
+
